@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Dine | Premium Restaurant System</title>
+
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f1e9;
+    color: #1c2b39;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+
+header {
+    background: #0b1f3a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #d4b483;
+}
+
+
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, #0b1f3a, #1c2b39);
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    background: #0b1f3a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d4b483;
+    color: #0b1f3a;
+}
+
+
+form input, form select {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.alt {
+    background: #e8dfcf;
+}
+
+
+footer {
+    background: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+<script src="javascript.js"></script>
+<body>
+
+<header>
+    <h2>Royal Dine</h2>
+    <nav>
+        <a href="#customers">Customers</a>
+        
+        <a href="#menu">Menu</a>
+        <a href="#reservations">Reservations</a>
+        <a href="#billing">Billing</a>
+        <a href="#staff">Staff</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Luxury Restaurant Management System</h1>
+    <p>Manage dining, reservations, orders & more — all in one place</p>
+</section>
+
+
+<section id="customers">
+    <h2>Customers</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Add Customer</h3>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <button>Add</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="menu">
+    <h2>Menu</h2>
+    <div class="grid">
+    </div>
+</section>
+
+<section id="billing" class="alt">
+    <h2>Billing</h2>
+    <div class="card">
+        <p>Total: ₹850</p>
+        <button>Pay Now</button>
+    </div>
+</section>
+
+<section id="reservations">
+    <h2>Reservations</h2>
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="date">
+        <input type="time">
+        <select>
+            <option value="2">2 People</option>
+<option value="4">4 People</option>
+<option value="6">6 People</option>
+        </select>
+        <button>Reserve</button>
+    </form>
+</section>
+
+<section id="staff">
+    <h2>Staff / Careers</h2>
+    <div class="card">
+        <h3>Apply for Job</h3>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Role">
+            <button>Apply</button>
+        </form>
+    </div>
+</section>
+
+
+<section class="alt">
+    <h2 style="text-align:center;">Go to Admin Module</h2>
+
+    <div class="card" style="text-align:center;">
+        <button onclick="window.open('admin.html')">
+            Open Admin Dashboard
+        </button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Royal Dine | Premium Experience</p>
+</footer>
+
+</body>
+</html>

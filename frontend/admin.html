@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Royal Dine Admin</h2>
+</header>
+
+<section class="hero">
+    <h1>Admin Dashboard</h1>
+    <p>Manage data in real-time</p>
+</section>
+
+<section>
+    <h2>Add Product</h2>
+    <div class="card center-box">
+        <input id="pname" placeholder="Product Name">
+        <input id="pprice" placeholder="Price">
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+</section>
+
+<section class="alt">
+    <h2>Products</h2>
+    <div id="products" class="grid"></div>
+</section>
+
+<section>
+    <h2>Users</h2>
+    <div id="users" class="grid"></div>
+</section>
+
+<section class="alt">
+    <h2>Orders</h2>
+    <div id="orders" class="grid"></div>
+</section>
+
+<section>
+    <h2>Payments</h2>
+    <div id="payments" class="card"></div>
+</section>
+
+<section class="alt">
+    <h2>Staff Applications</h2>
+    <div id="staff" class="grid"></div>
+</section>
+
+<section>
+    <h2>Reservations</h2>
+    <div id="reservations" class="grid"></div>
+</section>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+    padding: 20px;
+}
+
+h1 {
+    color: #0b1f3a;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+div {
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+button {
+    background: #0b1f3a;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+/* center box for forms */
+.center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* grid items spacing */
+#products p, 
+#users p, 
+#orders p, 
+#staff p, 
+#reservations p {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* buttons inside items */
+#products button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
